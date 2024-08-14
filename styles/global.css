@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #E2E4E9;
+}
+
+:root {
+    --red: #E3646E;
+    --purple: #BB72E9;
+    --blue: #3996DB;
+    --green: #82BC4F;
+    --yelow: #EABD5F;
+
+    --gray-100: #0D0E11;
+    --gray-200: #16181D;
+    --gray-300: #292C34;
+    --gray-400: #878EA1;
+    --gray-500: #C0C4CE;
+    --gray-600: #E2E4E9;
+
+    --font-family-asap:"Asap", sans-serif;
+    --title-lg: bold 56px/120% var(--font-family-asap);
+    --title-md: bold 24px/120% var(--font-family-asap);
+    --title-sm: bold 16px/120% var(--font-family-asap);
+
+
+    --font-family-inconsolata: "Inconsolata", monospace;
+    --subtitle: normal 20px/120 var(--font-family-inconsolata);
+
+    --font-family-maven-pro: "Maven Pro", sans-serif;
+    --tx-md: normal 16px/140% var(--font-family-maven-pro);
+    --tx-sm: normal 14px/140% var(--font-family-maven-pro);
+}
+
+body {
+    font-family: var(--font-family-asap);
+    color: var(--gray-500);
+    background-color: var(--gray-200);
+    box-sizing: 163px 120px;
+    /* width: 1366px; */
+    /* max-width: 1366px; */
+    background-size:auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url("../Assets/Background_Intro.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.header-picture{
+    background-size: cover;
+    border-radius: 50%;
+    width: 6rem;
+
+    margin-bottom: 3.5rem;
+}
+
+#header {
+   margin: 120px 163px 20px 163px ; 
+}
+
+.color-red {color: 
+    var(--red);
+}
+
+h1 {
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-family: "Inconsolata", monospace;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  margin-top: 56px;
+}
+h3:nth-child(4) {
+    margin-bottom: 80px;
+}
+
+p {
+  font-family: "Maven Pro", sans-serif;
+  /* font-weight: 400; */
+  color: var(--gray-400);
+  font: var(--tx-sm);
+  /* font-size: 0.875rem; */
+  word-wrap: break-word;
+}
+
+#ul1 {    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 1rem;
+}
+
+list1 p {
+  border: #E3646E 1px solid;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font: var(--title-md);
+  color: var(--gray-500);
+}
+
+.list1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  background-color: var(--gray-300);
+  border-radius: 2.5rem;
+}
+
+li img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#imagered {
+    color: var(--red);
+}
+
+button {
+    margin-top: 94px;
+    margin-bottom: 57px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#grid {
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  grid-auto-columns: auto;
+  justify-content: center;
+  padding-bottom: 144px;
+}
+
+figcaption {
+  padding: 12px 12px 112px 12px;
+  gap: 0.5rem;
+  background-color: var(--gray-300);
+  
+  border-radius: 12px;
+  max-width: 330px;
+  max-height: 280px;
+}
+
+figcaption p {
+  font: var(--tx-sm);
+  color: var(--gray-500);
+}
+figcaption img { 
+  border-radius: 8px;
+  max-width: 306px;
+  max-height: 156px;
+  margin-bottom: 20px;
+}
+
+.align {
+  text-align: center;
+}
+
+section {
+  margin: 0px 120px 56px 120px;
+}
+
+
+#preto {
+  background-color: var(--gray-100);
+  background-size: cover;
+  position: relative; 
+}
+
+figcaption2 {
+  border: solid 1px var(--gray-200);
+  padding: 20px;
+  /* max-width: 280px; */
+  /* max-height: 155px; */
+  gap: 24px;
+  border-radius: 12px;
+}
+
+#fig {
+  grid-template-columns: repeat(3, 280px);
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+
+#bloco {
+  padding-top: 88px;
+  margin-bottom: 56px;
+}
+
+footer {
+  background-image: url("../Assets/Background_Contacts.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  object-fit: cover;
+  text-align: center;
+  height: 750px;
+  margin-top: 128px;
+  margin-bottom: 200px
+}
+
+.purple {
+  color: var(--purple);
+}
+
+#ul2 {
+  display: grid;
+  justify-content: center;
+  margin-top: 48px;
+  gap: 16px;
+}
+.list2 {
+  width: 400px;
+  height: 68px;
+  border-radius: 8px;
+  display: flex;
+  background: var(--gray-300);
+  align-items: center;
+  gap: 12px;
+  padding-left: 20px;
+
+  position: relative;
+}
+
+h5 {
+  font: var(--tx-md);
+  color: var(--gray-500)
+}
+
+.test {
+  position: absolute;
+  right: 20px;
+  gap: 12px;
+}
